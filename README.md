@@ -76,8 +76,8 @@ How does it work?
   > localhost:8000/admin
 * CMS at your service
 
-
 <br>
+
 # Part 2 - Creating API
 ## Django Rest Framework
 * The only thing to do is

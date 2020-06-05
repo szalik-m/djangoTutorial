@@ -60,11 +60,11 @@ How does it work?
 * Open shell
   > python manage.py shell
 * Adding object to database (article example):
-  > from articles.models import article
-  > my_article = Article() # creating object
-  > my_article.title = "Lion"
-  > my_article.body = "Big lion eats a lot of meat!"
-  > my_article.save() # object -> query translation -> database
+  > from articles.models import article<br>
+  > my_article = Article() # creating object<br>
+  > my_article.title = "Lion"<br>
+  > my_article.body = "Big lion eats a lot of meat!"<br>
+  > my_article.save() # object -> query translation -> database<br>
   > 
   > Article.objects.all() # print created articles
 * This article is now in database!

@@ -55,7 +55,30 @@ How does it work?
   > python manage.py migrate
 
 
-# Part2 - Creating API
+## ORM
+* You can use django object-relational mapping
+* Open shell
+  > python manage.py shell
+* Adding object to database (article example):
+  > from articles.models import article
+  > my_article = Article() # creating object
+  > my_article.title = "Lion"
+  > my_article.body = "Big lion eats a lot of meat!"
+  > my_article.save() # object -> query translation -> database
+  > 
+  > Article.objects.all() # print created articles
+* This article is now in database!
+* Use sql browser or shell to show created records
+
+
+## Django admin
+* In browser open
+  > localhost:8000/admin
+* CMS at your service
+
+
+<br>
+# Part 2 - Creating API
 ## Django Rest Framework
 * The only thing to do is
   > pip instal djangorestframework
